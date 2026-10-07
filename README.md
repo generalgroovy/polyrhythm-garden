@@ -4,11 +4,11 @@ Plant beats in rings of different lengths and hear the patterns meet in unexpect
 
 ## Run
 
-No installation or build. Run `python -m http.server 8000` in this folder, then open http://localhost:8000. Press **Play** and toggle a numbered dot. All controls also work with Tab and Enter/Space.
+No installation or build. Run `python -m http.server 8000` in this folder, then open http://localhost:8000. Press **Play** and toggle a numbered dot: edits keep the rhythm playing. All controls also work with Tab and Enter/Space.
 
-Use one to four rings, 3–16 steps each, four sounds, and a shared tempo. Rotate a ring, spread its current beat count evenly, or clear it. Changing a ring's size redistributes its beat count; **Undo** restores the previous arrangement. Edits stop playback. Every dot advances on the same sixteenth-note pulse, so different lengths create repeating cross-rhythms.
+Use one to four rings, 3–16 steps each, four sounds, and a shared tempo. **Shape this ring** reveals its sound, rotation, even spreading, clearing and removal controls. Ring lengths and beat dots stay visible. Expanded controls stay open while editing. Changing a ring's size redistributes its beat count; **Undo** restores the previous arrangement. Beat, ring, sound and tempo edits take effect during playback on the next scheduled pulse (the look-ahead is up to 80 ms). Undo, reset and opening a project stop playback; they never start restored material. An edit during a pending initial audio start cancels that start. Every dot advances on the same sixteenth-note pulse, so different lengths create repeating cross-rhythms.
 
-Your pattern saves locally when browser storage is available. **Keep it & explore** contains editable JSON download/open and a recoverable reset. Imports are validated before replacing state. Undo holds 40 edits in this session. Audio stops when the tab hides; it never starts on load or restore.
+Your pattern saves locally when browser storage is available. **Save, open & learn** contains editable JSON download/open and a recoverable reset. Imports are validated before replacing state. Undo holds 40 edits in this session. Audio stops when the tab hides; it never starts on load or restore.
 
 ## Verify
 
